@@ -193,6 +193,7 @@ a:hover { color: #FF0; }
 table {
   width: 100%;
   table-layout: fixed;
+  color: white;
 }
 
 tr {
@@ -318,12 +319,37 @@ h4, .h4 {
 }
 
 .service-content .service-item {
+  display: inline-block;
+  width: 30vw;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 25px 30px;
   text-align: center;
   color: #fff;
   margin-bottom: 30px;
 }
+
+.service-content .table-row{
+  margin: 2vh auto;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#timetable {
+  background-color: red;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease; /* Плавная анимация высоты */
+}
+
+#timetable.collapsed {
+  height: 0;
+}
+
+#timetable.expanded {
+  height: 100vh; /* Высота блока автоматически подстраивается под содержимое */
+}
+
 
 .service-content .service-item .line-dec {
   width: 45px;
