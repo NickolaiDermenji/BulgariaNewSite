@@ -230,6 +230,15 @@ td {
   width: 50vw;
   height: 30vh;
 }
+
+.contact-name{
+  display: inline-block;
+  vertical-align: top; 
+  color: white; 
+  margin:10px; 
+  font-size: 3vh
+}
+
 .moldFlag{
   display: inline-block;
   width: 10vw;
@@ -320,7 +329,7 @@ h4, .h4 {
 
 .service-content .service-item {
   display: inline-block;
-  width: 30vw;
+  width: 35vw;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 25px 30px;
   text-align: center;
@@ -328,29 +337,29 @@ h4, .h4 {
   margin-bottom: 30px;
 }
 
-.service-content .table-row{
-  margin: 2vh auto;
-  width: 70vw;
-  display: flex;
-  justify-content: space-between;
-}
 
 #timetable {
-  background-color: red;
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease; /* Плавная анимация высоты */
 }
+
 
 #timetable.collapsed {
   height: 0;
 }
 
 #timetable.expanded {
-  height: 100vh; /* Высота блока автоматически подстраивается под содержимое */
+  height: fit-content; /* Высота блока автоматически подстраивается под содержимое */
 }
 
-
+.galery-name{
+  font-size:5vw; 
+  margin-left: 39vw; 
+  margin-top: -10vh; 
+  margin-bottom: 15vh; 
+  font-style:italic;
+}
 .service-content .service-item .line-dec {
   width: 45px;
   height: 3px;
@@ -607,9 +616,92 @@ footer em {
 }
 
 @media (max-width: 767px){
+
+  .comfort-options {
+  position: absolute;
+  width: 40vw;
+  height: 4vh;
+  right: 0;
+  border-radius: 0 0 0 20px;
+  background-color: #d62612;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2vh;
+}
+
+.comfort-options img {
+  width: 4vh;
+  margin-top: 2vh;
+  margin-left: 2vw;
+}
+
+.mersedes-vito{
+    position: absolute;
+    width: 80vw;
+    height: 60vw;
+    background-size: 80vw;
+    margin-left: 15vw;
+    margin-top: 5vh;
+  }
+
+.contacts{
+  margin-top: 35vh;
+  padding-top: 3vh;
+  width: 70vw;
+  height: 30vh;
+}
+
+.contact-name{
+  display: block;
+  margin-top: -13vh;
+  margin-left: 0vw;
+}
+
+.moldFlag{
+  display: block;
+  width: 24vw;
+  height: 17vw;
+  background-image: url(../img/moldFlag.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: top;
+
+}
+
+.moldFlag img{
+  display: block;
+  width: 10vw;
+  margin:0;
+  margin-left: 75vw;
+}
+
+.moldFlag .viber{
+  margin-top: -10vw;
+}
+
+.bolgFlag{
+  display: block;
+  margin-top: 12vh;
+  width: 24vw;
+  height: 17vw;
+  background-image: url(../img/bolgFlag.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.numberPhone{
+  display: block;
+  position: relative; 
+  right: -30vw;
+  bottom: -5vw; 
+  font-size: 2.5vh;
+  color: white;
+  white-space: nowrap;
+}
   
   .baner-content {
-    padding-top: 30vh;
+    padding-top: 10vh;
   }
 
   .baner-content h1 {
@@ -629,35 +721,56 @@ footer em {
   }
 
   .service-content {
-    padding-top: 5vh;
+    padding-top: 25vh;
     text-align: center;
+    width: 100vw;
   }
 
   .service-content .left-text .line-dec {
-    width: 45px;
+    width: 80vw;
     height: 3px;
     background-color: #ff7d27;
     margin: 20px auto 20px auto;
   }
 
   .service-content .left-text ul {
-    text-align: left;
+  margin-left: 0vw;
+  margin-top: 5vh;
+  list-style: none;
+  text-align: left;
+  }
+
+  .service-content .left-text ul li {
+    margin: 10px 0px;
+    font-weight: 500;
+    font-size: 4vw;
+    color: #fff;
+  }
+
+  #timetable .service-content{
+    padding: 5vh 5vw;
   }
 
   .service-content .service-item {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 25px 30px;
-    text-align: center;
-    color: #fff;
-    margin-bottom: 30px;
+    display: block;
+    width: 80vw;
   }
 
-  .mersedes-vito{
-    width: 100vw;
-    height: 60vw;
-    background-size: 100vw;
-    margin-top: 0vw;
+  .galery-name{
+    margin-top: 0;
+    margin-bottom: 5vh;
+    margin-left: 30vw;
+    font-size: 5vh;
   }
+
+  .galery-description{
+    padding: 0 10vw;
+  }
+
+  .contact-content{
+    padding-top: 5vh;
+  }
+
 }
 
 @media (min-width: 1200px) {
