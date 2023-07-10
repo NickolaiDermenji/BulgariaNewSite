@@ -246,7 +246,7 @@ nav a::before {
   position: fixed;
  	display: inline-block;
   text-align: center;
-	background-color: #faf5b2;
+	background-color: #fff;
 	height: 15%;
 	width: 15%;
 }
