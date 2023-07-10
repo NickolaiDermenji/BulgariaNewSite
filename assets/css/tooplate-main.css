@@ -624,6 +624,9 @@ td {
 /* Responsive Style */
 @media (max-width: 991px) {
 
+	body {
+    border: 5px solid red;
+  }
   .slides .slide .content {
 	width: 100%;
 	height: 80%;
