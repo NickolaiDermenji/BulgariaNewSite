@@ -244,14 +244,12 @@ nav a::before {
   left: 0;
   z-index: 999999;
   position: fixed;
- 	display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Высота блока равна 100% высоты окна браузера */
-  text-align: center;
-	background-color: #fff;
+	background-image: url("../images/logo.png");
 	height: 15%;
 	width: 15%;
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .logo h1 {
   font-size: 24px;
@@ -265,14 +263,6 @@ nav a::before {
 }
 .logo h2 {
   display: none;
-}
-.logo-image {
-  margin: auto;
-  width: 80%;
-  height: 95%;
-  background-image: url("../images/logo1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .slides {
   width: 500vw;
@@ -370,9 +360,6 @@ nav a::before {
 #image-slider ul li:nth-child(2) {
   background-image: url(../images/bulgaria.jpg);
 }
-#image-slider ul li:nth-child(3) {
-  background-image: url(../images/vito-pc.png);
-}
 #image-slider ul li.active-img{
   left: 0;
 }
@@ -422,6 +409,16 @@ nav a::before {
   text-transform: uppercase;
   font-weight: 900;
   color: #fff;
+}
+.info-slide {
+  width: 26%;
+}
+.info-slide h6 {
+  padding: 10px 0 0 10px;
+  width: 100%; 
+  position: absolute; 
+  right:0%; 
+  text-align: left;
 }
 
 
@@ -643,6 +640,9 @@ td {
   #image-slider ul li:nth-child(1) {
     background-image: url(../images/vito-mobile.png);
   }
+  #image-slider ul li:nth-child(2) {
+    background-image: url(../images/bulgaria-mobile.jpg);
+  }
 
   .second-content {
 	top: 250%!important;
@@ -658,11 +658,7 @@ td {
   }
   .logo {
     height: 100px;
-  }
-  .logo-image {
-    background-image: url("../images/logo1-noText.png");
-    width: 100%;
-    height: 50%;
+    background-image: url("../images/logo-mobile.png");
   }
   .logo h1 {
     display: none;
@@ -714,7 +710,13 @@ td {
     top: 140px;
   }
   .slide-caption h2 {
-  	font-size: 48px;
+  	font-size: 40px;
+  }
+  .slide-caption h6 {
+    margin-top: 20px;
+  }
+  .info-slide {
+    width: 350px;
   }
   .tabs-content {
     width: auto;
