@@ -158,7 +158,7 @@ a {
 
 
 html {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 body {
@@ -167,7 +167,7 @@ body {
 }
 
 nav {
-	top: 15%;
+  top: 15%;
   text-align: center;
   background: rgba(0, 0, 0, 0.75);
   position: fixed;
@@ -179,51 +179,51 @@ nav {
   font-size: 1rem;
 }
 nav em {
-	font-style: normal;
-	font-size: 13px;
-	text-transform: uppercase;
-	display: block;
-	margin-top: 15px;
-	color: #fff;
+  font-style: normal;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 15px;
+  color: #fff;
 }
 
 nav ul li a {
-	text-align: center;
+  text-align: center;
 }
 
 nav ul {
-	position: relative;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-	text-align: left;
-	list-style-type: none;
-	height: 70%;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
+  text-align: left;
+  list-style-type: none;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-	-ms-flex-pack: distribute;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 nav ul li {
-	text-align: center;
-	margin: 5px 0px;
+  text-align: center;
+  margin: 5px 0px;
 }
 nav a, nav a:visited, nav a:active {
   color: #fff;
 }
 nav a {
-	text-decoration: none!important;
-	display: inline-block;
-	width: 140px;
-	padding: 15px 0px;
-	position: relative;
-	z-index: 0;
-	transition: all .5s;
+  text-decoration: none!important;
+  display: inline-block;
+  width: 140px;
+  padding: 15px 0px;
+  position: relative;
+  z-index: 0;
+  transition: all .5s;
 }
 nav a.active {
   background-color: rgba(0,0,0,0.8);
@@ -239,14 +239,14 @@ nav a::before {
   z-index: -1;
 }
 .logo {
-	margin-top: 0px;
+  margin-top: 0px;
   top: 0;
   left: 0;
   z-index: 999999;
   position: fixed;
-	background-image: url("../images/logo.png");
-	height: 15%;
-	width: 15%;
+  background-image: url("../images/logo.png");
+  height: 15%;
+  width: 15%;
 
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -265,7 +265,7 @@ nav a::before {
   display: none;
 }
 .slides {
-  width: 500vw;
+  width: 750vw;
   height: 100vh;
   -webkit-transition: -webkit-transform 0.8s ease;
   transition: -webkit-transform 0.8s ease;
@@ -360,6 +360,9 @@ nav a::before {
 #image-slider ul li:nth-child(2) {
   background-image: url(../images/bulgaria.jpg);
 }
+#image-slider ul li:nth-child(3) {
+  background-image: url(../images/advertising.jpg);
+}
 #image-slider ul li.active-img{
   left: 0;
 }
@@ -410,15 +413,34 @@ nav a::before {
   font-weight: 900;
   color: #fff;
 }
-.info-slide {
-  width: 26%;
+.slide-caption p{
+  color: #fff;
+  font-size: 20px;
 }
-.info-slide h6 {
-  padding: 10px 0 0 10px;
-  width: 100%; 
-  position: absolute; 
-  right:0%; 
-  text-align: left;
+
+.slide-caption p a{
+  margin: initial;
+  background-color: red; 
+  padding: 3px 3px; 
+  border-radius: 20px
+}
+
+.advertising {
+  padding: 10px;
+  width: 40%;
+  background-color: rgba(138,215,231,0.8);
+  border-radius: 20px;
+  text-align: justify;
+  line-height: 10px;
+}
+.advertising h6 {
+  margin: initial;
+}
+.advertising p a{
+  margin: initial;
+  background-color: red; 
+  padding: 3px 3px; 
+  border-radius: 20px
 }
 
 
@@ -426,8 +448,8 @@ nav a::before {
 
 /* Slide 2 Style */
 .second-content {
-	top: 180%!important;
-	transform: translateY(-180%);
+  top: 180%!important;
+  transform: translateY(-180%);
 }
 #tabs {
   float: right;
@@ -506,7 +528,10 @@ nav a::before {
   margin-top: 30px;
   margin-bottom: 0px;
 }
-
+.schedule-table {
+    overflow: scroll;
+    padding-bottom: 10vh;
+  }
 .schedule {
   margin: 25px auto 0px;
   text-align: center;
@@ -533,8 +558,8 @@ td {
 
 /* Slide 3 Style */
 .third-content {
-	top: 120%!important;
-	transform: translateY(-120%);
+  top: 120%!important;
+  transform: translateY(-120%);
 }
 .third-content .down-content{
   display: none;
@@ -593,9 +618,9 @@ td {
 
 /* Slide 4 Style */
 .fourth-content {
-	top: 140%!important;
+  top: 140%!important;
   height: 100%;
-	transform: translateY(-140%);
+  transform: translateY(-140%);
 }
 #contact {
   text-align: center;
@@ -632,9 +657,9 @@ td {
 @media (max-width: 991px) {
 
   .slides .slide .content {
-	width: 100%;
-	height: 92%;
-	left: 0;
+  width: 100%;
+  height: 92%;
+  left: 0;
   }
 
   #image-slider ul li:nth-child(1) {
@@ -645,16 +670,16 @@ td {
   }
 
   .second-content {
-	top: 250%!important;
-	transform: translateY(-250%);
+  top: 250%!important;
+  transform: translateY(-250%);
   }
   .third-content {
-	top: 200%!important;
-	transform: translateY(-200%);
+  top: 200%!important;
+  transform: translateY(-200%);
   }
   .fourth-content {
-	top: 300%!important;
-	transform: translateY(-300%);
+  top: 300%!important;
+  transform: translateY(-300%);
   }
   .logo {
     height: 100px;
@@ -664,7 +689,7 @@ td {
     display: none;
   }
   .logo h2 {
-  	margin-top: 0px;
+    margin-top: 0px;
     line-height: 100px;
     height: 100px;
     width: 15vw;
@@ -694,30 +719,35 @@ td {
     margin: 0px;
   }
   nav ul li img {
-	width: 35%;
+  width: 35%;
   }
   nav ul li em {
     display: none;
   }
   nav a {
-  	text-align: center;
-	  width: 60px;
-	  height: 60px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
     line-height: 30px;
     display: inline-block;
   }
   .second-slide {
     top: 140px;
   }
+  .slide-caption {
+    width: 95%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    transforms: translateX(-50%);
+  }
   .slide-caption h2 {
-  	font-size: 40px;
+    font-size: 40px;
   }
   .slide-caption h6 {
-    margin-top: 20px;
+    margin: 10px 0px;
   }
-  .info-slide {
-    width: 350px;
-  }
+
   .tabs-content {
     width: auto;
     text-align: center;
@@ -747,10 +777,7 @@ td {
     max-height: 80px;
     margin-left: 10px;
   }
-  .slide-caption {
-    padding-left: 30px;
-    padding-bottom: 400px;
-  }
+
   #tabs ul li span {
     width: 60px;
     height: 60px;
@@ -791,7 +818,10 @@ td {
     margin-top: 0px;
     margin-bottom: 20px;
   }
-
+  .schedule-table {
+    overflow: scroll;
+    padding-bottom: 10vh;
+  }
   .schedule {
     font-size: 14px;
     margin-top: 15px;
