@@ -436,6 +436,7 @@ nav a::before {
 .advertising h6 {
   margin: initial;
   font-size: 1.75vh;
+  color:red;
 }
 .advertising p a{
   margin: initial;
