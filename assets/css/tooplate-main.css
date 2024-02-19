@@ -435,6 +435,7 @@ nav a::before {
 }
 .advertising h6 {
   margin: initial;
+  font-size: 1.75vh;
 }
 .advertising p a{
   margin: initial;
@@ -628,7 +629,8 @@ td {
   max-width: 750px;
   margin-bottom: 100px;
   padding: 40px;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 20px;
 }
 #contact h2 {
   font-size: 29px;
@@ -637,6 +639,10 @@ td {
   color: black;
   margin-top: 0px;
   margin-bottom: 50px;
+}
+#contact p a {
+  color: black;
+  font-weight: bold;
 }
 .numbers {
   display: inline-block;
@@ -667,6 +673,9 @@ td {
   }
   #image-slider ul li:nth-child(2) {
     background-image: url(../images/bulgaria-mobile.jpg);
+  }
+  #image-slider ul li:nth-child(3) {
+    background-image: url(../images/advertising-mobile.jpg);
   }
 
   .second-content {
